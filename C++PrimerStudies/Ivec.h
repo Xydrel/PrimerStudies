@@ -35,13 +35,36 @@ void Ivec::SizeOfTest()
 void Ivec::LoopTest()
 {
 	const int SIZE = 5;
-	int ia[SIZE] = { 1, 2, 3, 4, 5 };
-	for ( int *ptr = ia, ix = 0; ix != SIZE && ptr != ia + SIZE; ++ix, ++ptr)
+	int iarray[SIZE] = { 1, 2, 3, 4, 5 };
+	for ( int *ptr = iarray, intx = 0; intx != SIZE && ptr != iarray + SIZE; ++intx, ++ptr )
 		cout << "*ptr value = " << (*ptr) << endl
-		     << "ix value = " << ix << endl
-			 << "ia value = " << ia << endl
-			 << "ia+SIZE value = " << ia+SIZE << endl;
+			 << "intx value = " << intx << endl
+			 << "iarray value = " << iarray << endl
+			 << "iarray+SIZE value = " << iarray + SIZE << endl;
 }
+
+class LiteralConversions
+{
+public:
+	void Print_cval();
+};
+
+void LiteralConversions::Print_cval()
+{
+	char cval;
+	unsigned int ui;
+	int ival;
+	float fval;
+	double dval;
+
+	cval = 'a' + 3;
+	cout << "(cval = 'a' + 3) = " << cval << endl;
+
+	fval = ui - ival * 1.0;
+	cout << "(fval = ui - ival * 1.0 | = " << fval << endl;
+}
+
+
 
 
 

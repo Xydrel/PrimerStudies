@@ -2,12 +2,13 @@
 
 int main()
 {
-	Ivec ivec;
+	//Ivec ivec;
 	//ivec.PrintIvecData();
 	//ivec.SizeOfTest();
-	ivec.LoopTest();
+	//ivec.LoopTest();
 
-
+	LiteralConversions lversions;
+	lversions.Print_cval();
 
 
 
