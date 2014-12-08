@@ -41,3 +41,19 @@ Icon
 Network Trash Folder
 Temporary Items
 .apdisk
+
+# =========================
+# VIsual Studio Files
+# =========================
+
+*.tlog
+*CL.read*
+*.obj
+*.idb
+*.pdb
+*.sdf
+*.opensdf
+*.filters
+*.log
+*.exe
+*.ilk
