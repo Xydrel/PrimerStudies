@@ -27,19 +27,31 @@ private:
 private:
 	vector<int> m_iVect1;
 	vector<int> m_iVect2;
-
 };
 
 // ---- Setters----
 ////////////////////////////////////////////////////////////////
 void Vector::setVec1()
 {
-	m_iVect1 = {0,1,2,3,4};
+	m_iVect1 = {
+		0x00000000,
+		0x00000001,
+		0x00000002,
+		0x00000003,
+		0x00000004,
+	};
 }
 
 void Vector::setVec2()
 {
-	m_iVect2 = {5,6,7,8,9};
+	m_iVect2 = {
+		0x00000005,
+		0x00000006,
+		0x00000007,
+		0x00000008,
+		0x00000009,
+		//0x000000ff
+	};
 }
 
 void Vector::SetVectors()
